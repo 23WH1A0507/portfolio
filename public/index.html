@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio of Pravallika Karanam, a passionate web developer showcasing projects, skills, and contact information."
+    />
+    <meta
+      name="keywords"
+      content="web developer, portfolio, Pravallika Karanam, projects, skills, internship"
+    />
+    <meta name="author" content="Pravallika Karanam" />
+    <meta
+      property="og:title"
+      content="Pravallika Karanam - Web Developer Portfolio"
+    />
+    <meta
+      property="og:description"
+      content="Portfolio of Pravallika Karanam, a passionate web developer showcasing projects, skills, and contact information."
+    />
+    <meta property="og:image" content="%PUBLIC_URL%/og-image.jpg" />
+    <meta property="og:url" content="https://yourportfolio.com" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Pravallika Karanam - Web Developer Portfolio" />
+    <meta name="twitter:description" content="Portfolio of Pravallika Karanam, a passionate web developer showcasing projects, skills, and contact information." />
+    <meta name="twitter:image" content="%PUBLIC_URL%/og-image.jpg" />
+    <meta name="theme-color" content="#ffffff" />
+    <title>Pravallika Karanam - Web Developer Portfolio</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="%PUBLIC_URL%/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="%PUBLIC_URL%/favicon-16x16.png" />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/apple-touch-icon.png" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Animate.css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="%PUBLIC_URL%/styles.css" />
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Pravallika Karanam",
+      "jobTitle": "Web Developer",
+      "url": "https://yourportfolio.com",
+      "sameAs": [
+        "https://linkedin.com/in/yourprofile",
+        "https://github.com/yourprofile"
+      ],
+      "description": "Portfolio of Pravallika Karanam, a passionate web developer showcasing projects, skills, and contact information."
+    }
+    </script>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <!-- Loading Animation -->
+    <div id="loading">
+      <div class="spinner"></div>
+      <p>Loading...</p>
+    </div>
+    <!-- Main Content -->
+    <div id="root">
+      <header>
+        <h1>Pravallika Karanam</h1>
+        <p>Web Developer | Passionate about building user-friendly applications</p>
+        <nav>
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <section id="about">
+          <h2>About Me</h2>
+          <p>Hi, I'm Pravallika, a web developer with a passion for creating beautiful and functional websites.</p>
+        </section>
+        <section id="projects">
+          <h2>Projects</h2>
+          <!-- Add project cards here -->
+        </section>
+        <section id="skills">
+          <h2>Skills</h2>
+          <!-- Add skills list or icons here -->
+        </section>
+        <section id="contact">
+          <h2>Contact</h2>
+          <!-- Add a contact form or links here -->
+        </section>
+      </main>
+      <footer>
+        <p>&copy; 2023 Pravallika Karanam. All rights reserved.</p>
+      </footer>
+    </div>
+    <!-- Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=YOUR_GA_ID"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "YOUR_GA_ID");
+    </script>
+    <!-- Custom Scripts -->
+    <script>
+      // Hide loading animation when page is fully loaded
+      window.addEventListener('load', () => {
+        const loading = document.getElementById('loading');
+        loading.style.display = 'none';
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,142 @@
+/* Global Variables */
+:root {
+  --background-color: #f4f4f9;
+  --text-color: #333;
+  --card-background: #fff;
+  --accent-color: #a647ff; /* Tomato color */
+  --accent-hover: #e04e39;
+}
+
+.portfolio {
+  padding: 4rem 2rem;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+.portfolio-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: var(--text-color);
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.project-card {
+  background-color: var(--card-background);
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.project-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: var(--text-color);
+}
+
+.project-card p {
+  font-size: 1rem;
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+.technologies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 1rem 0;
+}
+
+.tech-tag {
+  background-color: var(--accent-color);
+  color: white;
+  padding: 0.3rem 0.7rem;
+  border-radius: 15px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.project-status {
+  font-weight: bold;
+  margin-top: 1rem;
+  padding: 0.5rem;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.project-status.completed {
+  background-color: #28a745;
+  color: white;
+}
+
+.project-status.in-progress {
+  background-color: #ffc107;
+  color: black;
+}
+
+.project-links {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.project-links a {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--accent-color);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.project-links a:hover {
+  color: var(--accent-hover);
+}
+
+.demo-coming-soon {
+  font-style: italic;
+  color: #888;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .portfolio {
+    padding: 2rem 1rem;
+  }
+
+  .portfolio-title {
+    font-size: 2rem;
+  }
+
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .project-card {
+    padding: 1rem;
+    flex-direction: column; /* Added for better alignment on small screens */
+  }
+
+  .project-card h3 {
+    font-size: 1.3rem;
+  }
+
+  .project-card p {
+    font-size: 0.9rem;
+  }
+}

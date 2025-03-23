@@ -1,0 +1,9 @@
+{
+  "short_name": "Portfolio",
+  "name": "Pravallika Karanam's Portfolio",
+  "start_url": "/",
+  "background_color": "#1e1e2f",
+  "display": "standalone",
+  "scope": "/",
+  "theme_color": "#1e1e2f"
+}

@@ -1,0 +1,118 @@
+/* General Header Styles */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: var(--background-color, #fff); /* Default background */
+  color: var(--text-color, #333); /* Default text color */
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.header .logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: var(--primary-color, #1e1e2f); /* Default primary color */
+  text-transform: uppercase; /* Added uppercase for a modern look */
+}
+
+.header .nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.header .nav-links a {
+  text-decoration: none;
+  color: var(--text-color, #333); /* Default text color */
+  font-size: 1.1rem;
+  font-weight: 500;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.header .nav-links a:hover {
+  color: var(--accent-color, #ff8a00); /* Default accent color */
+  transform: translateY(-3px); /* Subtle hover animation */
+}
+
+/* Mobile Menu Toggle Styles */
+.header .menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: var(--text-color, #333);
+  font-size: 2rem;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.header .menu-toggle:hover {
+  transform: rotate(90deg); /* Rotate icon on hover for visual feedback */
+}
+
+.header .header-actions {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.header .theme-toggle {
+  background: none;
+  border: none;
+  color: var(--text-color, #333);
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.header .theme-toggle:hover {
+  color: var(--accent-color, #ff8a00); /* Accent color on hover */
+}
+
+/* Navigation Links for Mobile View */
+.header .nav-links.open {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: absolute;
+  top: 80px;
+  right: 0;
+  background-color: var(--background-color, #fff);
+  padding: 20px;
+  width: 100%;
+  display: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Added shadow for mobile menu */
+}
+
+.header .nav-links.open a {
+  font-size: 1.2rem;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.header .nav-links.open a:hover {
+  color: var(--accent-color, #ff8a00);
+}
+
+/* Media Query for Mobile Screens */
+@media (max-width: 768px) {
+  .header .nav-links {
+    display: none;
+  }
+
+  .header .menu-toggle {
+    display: block;
+  }
+
+  .header .nav-links.open {
+    display: block;
+  }
+
+  .header .header-actions {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
